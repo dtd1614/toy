@@ -7,8 +7,8 @@ on:
 env:
   AWS_REGION: ap-northeast-2
   ECR_REPOSITORY: toy-ecr
-  ECS_SERVICE: ecs-toy-cluster
-  ECS_CLUSTER: ecs-toy-service
+  ECS_SERVICE: ecs-toy-service
+  ECS_CLUSTER: ecs-toy-cluster
   ECS_TASK_DEFINITION: task-definition.json
   CONTAINER_NAME: toy
 
