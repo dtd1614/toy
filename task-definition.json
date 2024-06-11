@@ -1,9 +1,9 @@
 {
-  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:${{ secrets.AWS_ACCOUNT_ID }}:task-definition/ecs-toy-task-definition:1",
+  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:901929896752:task-definition/ecs-toy-task-definition:1",
   "containerDefinitions": [
     {
       "name": "toy",
-      "image": "${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.ap-northeast-2.amazonaws.com/toy-ecr",
+      "image": "901929896752.dkr.ecr.ap-northeast-2.amazonaws.com/toy-ecr",
       "cpu": 0,
       "portMappings": [
         {
@@ -34,8 +34,8 @@
     }
   ],
   "family": "ecs-toy-task-definition",
-  "taskRoleArn": "arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/ecs-toy-task-execution-role",
-  "executionRoleArn": "arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/ecs-toy-task-execution-role",
+  "taskRoleArn": "arn:aws:iam::901929896752:role/ecs-toy-task-execution-role",
+  "executionRoleArn": "arn:aws:iam::901929896752:role/ecs-toy-task-execution-role",
   "networkMode": "awsvpc",
   "revision": 1,
   "volumes": [],
@@ -84,6 +84,6 @@
     "operatingSystemFamily": "LINUX"
   },
   "registeredAt": "2024-06-11T00:28:21.785Z",
-  "registeredBy": "arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:root",
+  "registeredBy": "arn:aws:iam::901929896752:root",
   "tags": []
 }
