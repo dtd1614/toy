@@ -25,6 +25,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Replace AWS_ACCOUNT_ID in task definition
+        run: |
+          sed -i "s/{AWS_ACCOUNT_ID}/${{ secrets.AWS_ACCOUNT_ID }}/g" task-definition.json
+
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
